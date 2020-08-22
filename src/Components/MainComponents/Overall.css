@@ -1,0 +1,87 @@
+.d-flex{
+    display: flex;
+}
+.d-block{
+    display: block;
+}
+.align-items-center{
+    align-items: center!important;
+}
+.px-md-0{
+    padding-right: 0;
+}
+.px-3{
+    padding-left: 1rem!important;
+}
+.py-3{
+    padding-bottom: 1rem!important;
+}
+
+[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.pr{
+    padding-right: 1.5rem;
+}
+.pr-4{
+    padding-right: 1.5rem;
+}
+.pl-4{
+    padding-left: 1.5rem!important;
+}
+.pb-5{
+    padding-bottom: 3rem!important;
+}
+.mr-1{
+    margin-right: 0.25rem
+}
+.mr-2{
+    margin-right: 0.5rem;
+}
+.mt-3{
+    margin-top: 1rem!important;
+}
+.mt-5{
+    margin-top: 3rem!important;
+}
+.mb-4{
+    margin-bottom: 1.5rem!important;
+}
+.mb-5{
+    margin-bottom: 3rem!important;
+}
+
+.justyfy-content{
+    justify-content: center!important;
+}
+.text-center{
+    text-align: center!important;
+}
+.text-lg-right{
+    text-align: right!important;
+}
+
+.ftco-no-pb{
+    padding-bottom: 0!important;
+}
+.ftco-no-pt{
+    padding-top: 0!important;
+}
+.ftco-section{
+    padding:9em 0;
+    position: relative;
+}
+.bg-light{
+    background: #f8f9fa !important;
+}
+.img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ftco-animate{
+    opacity: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,660 @@
+.gQLVSm {
+    display: flex;
+    margin-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 4px 4px;
+}
+.XlJje .header {
+    padding: 1rem 1.5rem;
+}
+
+.kQvKqX {
+    position: relative;
+    margin: 24px 24px 24px 20px;
+    border-right: 2px solid rgb(247, 247, 247);
+    width: 40%;
+}
+.kQvKqX .group-images {
+    display: flex;
+}
+.kQvKqX .group-images .images {
+    display: flex;
+    flex-direction: column;
+    min-width: 70px;
+}
+.kQvKqX .group-images .images div {
+    cursor: pointer;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.gcnmPF {
+    padding-top: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://salt.tikicdn.com/cache/w80/ts/product/02/7c/dd/06a00fe….jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.kQvKqX .group-images .images a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Dozqv {
+    margin: auto;
+    height: 100%;
+    background-size: cover;
+    display: block;
+    clip: rect(0px, 0px, 0px, 0px);
+}
+.kQvKqX .group-images .images div.active {
+    border-color: rgb(24, 158, 255);
+}
+.kQvKqX .group-images .thumbnail {
+    margin-left: 24px;
+    text-align: center;
+}
+.jcyqbC {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 390px;
+    height: 390px;
+}
+.jcyqbC .container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+.jcyqbC .container img{
+margin: auto;
+height: 100%;
+background-size: cover;
+display: block;
+}
+.XlJje {
+    flex: 1 1 0%;
+    width: 60%;
+}
+.XlJje .header .bestseller {
+    display: flex;
+    align-items: center;
+}
+.MuiBox-root-1 {
+    margin-bottom: 0px!important;
+    border-color: transparent;
+}
+.icon.prize {
+    width: 23px;
+    height: 24px;
+    background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/icons/prize.png);
+    background-size: 23px 24px;
+}
+.XlJje .header .bestseller .icon {
+    margin-right: 5px;
+}
+.XlJje .header .bestseller p {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    line-height: 24px;
+    margin: 8px 0px 0px;
+}
+.XlJje .header .bestseller p span {
+    font-weight: 700;
+}
+.XlJje .header .brand {
+    display: flex;
+    margin-top: 8px;
+}
+.XlJje .header .brand h6 {
+    color: rgb(51, 51, 51);
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0px 20px 0px 0px;
+}
+.XlJje .header .brand h6:last-child {
+    color: rgb(155, 155, 155);
+    font-weight: 400;
+}
+.HhfBq {
+    background-color: rgba(0, 153, 0, 0.05);
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin: 12px 0px -8px;
+    border-radius: 4px;
+}
+
+.XlJje .body {
+    padding: 0px 1.5rem;
+}
+.XlJje .body .summary {
+    display: flex;
+}
+.XlJje .body .summary .left {
+    padding-right: 1.25rem;
+    flex: 1 1 0%;
+}
+.HhfBq .widget-info__icon {
+    flex-basis: 33px;
+    width: 33px;
+    margin: 0px 0.75rem 0px 0px;
+}
+.HhfBq .widget-info__content {
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(0, 153, 0);
+}
+.HhfBq .widget-info__title {
+    font-weight: 500;
+    display: inline;
+}
+.HhfBq .widget-info__description {
+    display: inline;
+    margin: 0px 0px 0px 3px;
+}
+.HhfBq .widget-info__content a {
+    color: rgb(0, 153, 0);
+    text-decoration: underline;
+}
+.XlJje .body .summary .left .group {
+    padding: 1.25rem 0px;
+}
+.XlJje .body .summary .left .price {
+    color: rgb(255, 52, 37);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0px;
+}
+.XlJje .body .summary .left .original-price.first-child {
+    margin: 0.625rem 0px 0px;
+}
+.XlJje .body .summary .left .original-price span {
+    color: rgb(255, 52, 37);
+    font-weight: 400;
+}
+.XlJje .body .summary .left .original-price {
+    color: rgb(155, 155, 155);
+    font-size: 13px;
+    font-weight: 300;
+    margin: 6px 0px 0px;
+}
+.XlJje .border-top {
+    border-top: 1px solid rgb(236, 236, 236);
+}
+.XlJje ul.list {
+    word-break: break-word;
+    margin: 0px;
+    padding: 0 0 0 20px;
+    overflow: hidden;
+}
+.XlJje ul.list > li {
+    margin-bottom: 6px;
+    color: rgb(36, 36, 36);
+    font-size: 13px;
+    line-height: 16px;
+}
+.dJbIjB {
+    display: flex;
+    margin: 10px 0px 0px;
+}
+.fXfceZ .label {
+    color: rgb(123, 123, 123);
+    font-size: 11px;
+    margin: 0px 0px 6px;
+}
+.fXfceZ .group-input {
+    display: flex;
+    align-items: center;
+}
+.fXfceZ .group-input button:first-child {
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+.fXfceZ .group-input button {
+    cursor: pointer;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(236, 236, 236);
+    border-image: initial;
+}
+.fXfceZ .group-input input {
+    width: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(236, 236, 236);
+    border-image: initial;
+    text-align: center;
+}
+.fXfceZ .group-input button:last-child {
+    border-left: none;
+    border-radius: 0px 4px 4px 0px;
+}
+.dJbIjB .group-button {
+    margin-right: 20px;
+    flex: 1 1 0%;
+}
+.dJbIjB .btn.btn-add-to-cart {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 57, 69);
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+}
+.dJbIjB .btn span {
+    margin-right: 8px;
+    width: 25px;
+    height: 20px;
+}
+.dJbIjB .btn:hover {
+    opacity: 0.8;
+    outline: none;
+}
+.dJbIjB .btn-add-favorite {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    color: rgb(133, 133, 133);
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    outline: none;
+}
+.dJbIjB .btn-add-favorite span {
+    width: 100%;
+    height: 100%;
+}
+.dJbIjB .btn-add-favorite:hover {
+    color: rgb(242, 120, 113);
+}
+.fPKjrA .delivery__title {
+    font-size: 14px;
+    color: rgb(36, 36, 36);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.fPKjrA .delivery__picker {
+    line-height: 24px;
+    margin: 0px 0px 12px;
+}
+.fPKjrA .delivery__picker-link {
+    color: rgb(0, 127, 240);
+    cursor: pointer;
+}
+.fPKjrA .delivery__seller {
+    color: rgb(36, 36, 36);
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.fPKjrA .delivery__options {
+    margin: 0px 0px 0.75rem;
+}
+.fPKjrA .delivery__option:last-child {
+    border-bottom: none;
+    padding: 0px;
+}
+.fPKjrA .delivery__time {
+    color: rgb(0, 153, 0);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.fPKjrA .delivery__wrap {
+    font-size: 13px;
+    line-height: 20px;
+}
+.fPKjrA .delivery__fee {
+    margin: 0px 0.25rem 0px 0px;
+}
+.XlJje .body .summary .right {
+    padding-bottom: 1.25rem;
+    width: 220px;
+}
+.XlJje .body .summary .right .group {
+    margin-top: calc(5rem/6);
+    padding: calc(5rem/6);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(236, 236, 236);
+    border-image: initial;
+    border-radius: 4px;
+}
+.joYxsO .seller-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.joYxsO .seller-info .icon-store {
+    margin-right: 0.5rem
+}
+.tikicon.icon-store {
+    background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/sprite.png?v=100000000);
+    background-position: -232px -288px;
+    width: 24px;
+    height: 24px;
+}
+.joYxsO .seller-info > div {
+    flex: 0 0 calc(100% - 32px);
+}
+.joYxsO .seller-info .seller-name {
+    color: rgb(0, 127, 240);
+    font-size: 13px;
+    font-weight: 500;
+}
+.joYxsO .seller-info .seller-description {
+    color: rgb(74, 74, 74);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 11px;
+    margin: 4px 0px 0px;
+}
+.joYxsO .btn-view-shop {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 24px;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+    background-color: rgb(24, 158, 255);
+    margin: 10px 0px 12px;
+    border-radius: 4px;
+}
+.joYxsO .seller-specification {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.tikicon.icon-hoan-tien-2 {
+    background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/sprite.png?v=100000000);
+    background-position: -362px -281px;
+    width: 20px;
+    height: 20px;
+}
+.joYxsO .seller-specification > div {
+    flex: 0 0 calc(100% - 28px);
+}
+.joYxsO .seller-specification .text {
+    color: rgb(74, 74, 74);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0px;
+}
+.joYxsO .seller-specification .text b {
+    font-weight: 500;
+}
+.joYxsO .seller-specification .tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tikicon.icon-info-grey {
+    background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/sprite.png?v=100000000);
+    background-position: -148px -128px;
+    width: 14px;
+    height: 14px;
+}
+.joYxsO .seller-specification .tooltip .view {
+    z-index: 2;
+    position: absolute;
+    bottom: 13px;
+    right: -15px;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 8px;
+    display: none;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 8px;
+}
+.joYxsO .seller-specification .text {
+    color: rgb(74, 74, 74);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin: 0px;
+}
+.XlJje .body .summary .right .social-buttons {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.iGcHhb {
+    opacity: 1;
+    margin: 24px 0px 0px;
+}
+.iGcHhb .title {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 8px 16px;
+}
+.iGcHhb .seller:last-child {
+    margin: 0px;
+}
+.iGcHhb .seller {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(242, 242, 242);
+    border-image: initial;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+.iGcHhb .seller__name, .iGcHhb .seller__price {
+    display: block;
+    color: rgb(51, 51, 51);
+    padding-right: 70px;
+    word-break: break-word;
+    text-decoration: none;
+}
+.iGcHhb .seller__view {
+    font-size: 13px;
+    width: 64px;
+    height: 32px;
+    line-height: 32px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(199, 199, 199);
+    border-image: initial;
+    padding: 0px;
+    border-radius: 4px;
+    background: 0px center;
+    outline: 0px;
+}
+.iGcHhb .delivery {
+    font-weight: 400;
+}
+.iGcHhb .delivery__option:last-child {
+    border-bottom: none;
+}
+.iGcHhb .delivery__option {
+    font-size: 13px;
+    line-height: 20px;
+    padding: 13px 0px 10px;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+.iGcHhb .delivery__time {
+    color: rgb(0, 153, 0);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+}
+.iGcHhb .delivery__fee {
+    margin: 0px 4px 0px 0px;
+}
+.XlJje .body .promotions {
+    position: relative;
+    margin: 0px;
+    padding: 20px 0px;
+    border-top: 1px solid rgb(236, 236, 236);
+}
+.XlJje .group-title {
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 0px 12px;
+}
+.XlJje .body .promotions ul {
+    margin: 10px 0px;
+}
+.XlJje ul.list {
+    word-break: break-word;
+    padding: 0px 0px 0px 20px;
+    overflow: hidden;
+}
+.XlJje ul.list > li {
+    margin-bottom: 6px;
+    color: rgb(36, 36, 36);
+    font-size: 13px;
+    line-height: 16px;
+}
+.XlJje ul.list > li p {
+    margin-bottom: 6px;
+    color: rgb(36, 36, 36);
+    font-size: 13px;
+    line-height: 16px;
+}
+.XlJje ul.list > li a {
+    color: rgb(0, 127, 240) !important;
+}
+.fppNFB > span.save-coupon {
+    text-transform: uppercase;
+    color: rgb(0, 127, 240);
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0px 0px 0px 4px;
+}
+.XlJje ul.list > li:last-child {
+    margin-bottom: 0px;
+}
+
+
+.jFkAwY {
+    width: 1270px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.khHtLW {
+    display: flex;
+}
+.khHtLW .left {
+    flex: 1 1 0%;
+}
+.cfpgte {
+    color: rgb(51, 51, 51);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px 0px 10px;
+}
+.khHtLW .left .group {
+    margin-bottom: 40px;
+}
+.khHtLW .left .group .content.has-table {
+    padding: 10px 20px;
+}
+.khHtLW .left .group .content {
+    max-width: 920px;
+    color: rgb(36, 36, 36);
+    line-height: 21px;
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+}
+.khHtLW .left .group .content table {
+    max-width: 100%;
+    border-collapse: collapse;
+    width: 100% !important;
+    border-spacing: 0px;
+}
+.khHtLW .left .group .content table tr {
+    font-size: 13px;
+    border-bottom: 0px;
+}
+.khHtLW .left .group .content table tr td {
+    padding: 10px 15px;
+}
+.khHtLW .left .group .content table tr td:first-child {
+    width: 220px;
+    vertical-align: top;
+    color: rgb(79, 79, 79);
+    font-size: 13px;
+    font-weight: 500;
+    background: rgb(239, 239, 239);
+}
+.khHtLW .left .group .content table tr td:last-child {
+    flex: 1 1 0%;
+    border-right: 0px;
+}
+.eIzUuC {
+    position: relative;
+}
+.khHtLW .left .group .content {
+    max-width: 920px;
+    color: rgb(36, 36, 36);
+    line-height: 21px;
+    text-align: justify;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+}
+.eIzUuC {
+    position: relative;
+}
+.khHtLW .right {
+    width: 300px;
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.cYhFsH {
+    display: block;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.cYhFsH img {
+    width: 100%;
+}
+.kQvKqX .group-images .images div.active {
+    border-color: rgb(24, 158, 255);
+}

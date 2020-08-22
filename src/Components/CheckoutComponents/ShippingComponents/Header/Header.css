@@ -1,0 +1,44 @@
+.iQydii {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+    position: relative;
+    z-index: 1;
+    padding: 25px 0px 15px;
+    background: rgb(255, 255, 255);
+}
+.iQydii .header-container {
+    display: flex;
+    width: 100%;
+    align-items: center
+}
+.iQydii .logo {
+    width: 20%;
+}
+.iQydii .logo .icon {
+    background-image: url(https://frontend.tikicdn.com/_desktop-next/static/img/sprite@2x.png);
+    background-size: 404px;
+    width: 90px;
+    height: 60px;
+    display: block;
+    background-position: 0px 0px;
+}
+.MuiSvgIcon-root {
+    width: 1.2em!important;
+    height: 1.2em!important;
+}
+.MuiStepIcon-root.MuiStepIcon-active {
+    color: #41bcec!important;
+}
+.MuiStepIcon-root.MuiStepIcon-completed {
+    color: #41bcec!important;
+}
+.MuiStepConnector-alternativeLabel {
+    top: 0.8rem!important;
+}
+.MuiStepConnector-lineHorizontal {
+    border-top-width: 5px!important;
+}
+.navbar-brand.navbar-brandd{
+   color: black!important;
+   padding-left: 1rem;
+font-size: 2rem;
+}

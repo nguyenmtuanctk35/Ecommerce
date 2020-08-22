@@ -1,0 +1,46 @@
+.sidebar-box-2{
+    border-top: 2px solid #f7f7f7;
+}
+p.heading{
+    font-size: 1rem!important;
+    font-weight: 700!important;
+    padding-left: 0.1rem;
+}
+ a{
+font-weight: 700;
+font-size: 0.8rem;
+color: #0000009c;
+}
+.MuiRating-root{
+    font-size: 1rem!important;
+}
+
+form  {
+    margin: 2rem 0 0 0 !important;
+    width: 90%;
+    padding-left: 1rem;
+}
+.input-range__label--min{
+    left: 50%;
+}
+.input-range__track--active {
+    background: #189eff!important;
+}
+.input-range__slider {
+    background:#189eff!important;
+    border: 1px solid#189eff!important;
+} 
+#price-slider-submit {
+    background: #fff;
+    border: 1px solid #189eff;
+    font-size: 1rem;
+    color: #189eff;
+    padding: 0.25rem 1rem ;
+    width: 99px;
+    margin-top: 2rem;
+    border-radius: 10%;
+}
+#price-slider-submit:hover {
+background: #03a9e6;
+color: #fff;
+}

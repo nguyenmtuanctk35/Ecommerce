@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Random Plugins",
+  "version": "0.1",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "plugins.js"
+      ]
+    }
+  ]
+}

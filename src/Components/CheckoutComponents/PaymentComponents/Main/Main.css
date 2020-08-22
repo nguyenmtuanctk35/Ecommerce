@@ -1,0 +1,209 @@
+.ggAFge {
+    flex-basis: 72%;
+    padding: 25px 15px 0px;
+}
+.ggAFge .order-button {
+    width: 50%;
+    height: 50px;
+    padding: 0.5rem 0.25rem;
+    text-align: center;
+    line-height: 2;
+    outline-color: rgb(204, 204, 204);
+    cursor: pointer;
+    margin-top: 0.75rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(172, 34, 39);
+    border-image: initial;
+    border-radius: 3px;
+    background: linear-gradient(rgb(239, 57, 89), rgb(215, 32, 65));
+}
+.ggAFge .order-button a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-decoration: none;
+    
+}
+.ggAFge .order-button p {
+    text-align: left;
+    color: rgb(80, 80, 80);
+    font-size: 0.75rem;
+    margin: 0.75rem 0;
+}
+.fwsEni {
+    opacity: 1;
+}
+.fwsEni .title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    font-weight: 700;
+}
+.fFyyxJ{
+    width: 100%!important;
+}
+.MuiFormControl-root.iWIiNj {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 1px;
+    margin-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 4px;
+    padding: 10px 15px;
+    height: auto;
+    width: 100%;
+}
+.MuiFormControlLabel-root.fFyyxJ{
+    display: block!important;
+}
+.jFEIKb {
+    flex-basis: 28%;
+    padding: 40px 15px 0px;
+}
+.fxjiAa {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 3px;
+}
+.fxjiAa .title {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 31px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.fxjiAa .title a {
+    font-size: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 31px;
+    outline-color: rgb(204, 204, 204);
+    color: rgb(51, 51, 51);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+    border-radius: 2px;
+    text-decoration: none;
+}
+.fxjiAa .address .name {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.fxjiAa .address .street, .fxjiAa .address .phone {
+    padding: 2px 0px;
+}
+.UHbjr {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 3px;
+}
+.UHbjr .cart {
+    font-size: 0.75rem;
+}
+.UHbjr .cart .product{
+border-bottom: 1px solid rgb(201, 201, 201);
+padding: 0.5rem 0
+}
+.UHbjr .title {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 31px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.UHbjr .title a {
+    font-size: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 31px;
+    outline-color: rgb(204, 204, 204);
+    color: rgb(51, 51, 51);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+    border-radius: 2px;
+    text-decoration: none;
+}
+.ifcYED {
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.ifcYED .inner {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+.UHbjr .cart .price-summary .total {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-bottom: 0px;
+    line-height: 19px;
+    font-weight: 700;
+    border-top: 2px solid rgb(201, 201, 201);
+}
+.iylcMU .info {
+    width: 70%;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+.iylcMU .info .qty {
+    padding-right: 10px;
+}
+.iylcMU .info .product-name {
+    color: rgb(0, 127, 240);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+.iylcMU .info .seller-name {
+    display: block;
+    margin-top: 5px;
+}
+.iylcMU .price {
+    text-align: right;
+   display: inline-block;
+   width: 30%;
+}
+.UHbjr .cart .price-summary .total {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin-bottom: 0px;
+    line-height: 19px;
+    font-weight: 700;
+    border-top: 2px solid rgb(201, 201, 201);
+}
+.UHbjr .cart .price-summary .total .value {
+    color: rgb(238, 35, 71);
+    font-size: 19px;
+    font-weight: 400;
+    text-align: right;
+}

@@ -1,0 +1,35 @@
+.fxjiAa {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(221, 221, 221);
+    border-image: initial;
+    border-radius: 3px;
+}
+.fxjiAa .title {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: 13px;
+    line-height: 31px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+.fxjiAa .title a {
+    font-size: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    height: 31px;
+    outline-color: rgb(204, 204, 204);
+    color: rgb(51, 51, 51);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    background: linear-gradient(rgb(255, 255, 255), rgb(247, 247, 247));
+    border-radius: 2px;
+    text-decoration: none;
+}

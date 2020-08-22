@@ -1,0 +1,36 @@
+.bg-black{
+    background-color:white;
+    width: 100%;
+    height: 3vh;
+    padding-top:0.25rem!important;
+    padding-bottom: 0.25rem!important;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    font-weight: 400;
+    font-size: calc(15rem/16);
+    color: gray;
+    /* font-size: 0.9375rem; */
+}
+.topper{
+    font-size: calc(11em/15 ) ;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.topper .icon{
+    width: 30px;
+}
+.topper .icon span{
+    color: #fff;
+}
+.topper .text{
+    width: calc(100%-30px);
+    color: white;
+}
+.topper .text a{
+    color: #000000c9;
+    font-weight: 700;
+}
+.topper .text a:hover{
+    color:#ffac6a
+}

@@ -1,0 +1,1 @@
+export {fetchProductsIndex,fetchProductsShop} from './Products'

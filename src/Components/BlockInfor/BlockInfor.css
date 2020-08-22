@@ -1,0 +1,46 @@
+.product a {
+   background: #fff;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.product a .content {
+    font-size: 0.875em;
+    margin-bottom: calc(5rem/16);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: inherit;
+}
+.product a .content .image {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 12px;
+    padding-top: 0;
+    text-align: center;
+    margin: auto;
+}
+.product a .content .image img {
+    width: auto;
+    height: 100%;
+    margin: auto;
+}
+.img-responsive {
+    display: block;
+    height: auto;
+}
+
+p.title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: calc(13em/16);
+    line-height: 1.8;
+    font-weight: 400;
+    color: black;
+    height: 1.5vw;
+    overflow: hidden;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}

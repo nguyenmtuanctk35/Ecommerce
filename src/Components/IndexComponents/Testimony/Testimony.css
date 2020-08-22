@@ -1,0 +1,21 @@
+.testimony-section {
+    position: relative;
+    text-align: center;
+    padding: 3em 0!important
+}
+.heading-section {
+    position: relative;
+}
+.heading-section h2 {
+    position: relative;
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #000000;
+    line-height: 1.5;
+}
+.owl-carousel.owl-loading {
+    opacity: 1!important;
+    visibility: visible!important;
+    display: inline-table!important;
+    width: 100%;
+}
