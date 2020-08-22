@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import {HashRouter } from 'react-router-dom'
 import productsReducer from './Store/Reducers/Products'
 import {Provider} from 'react-redux'
 import thunk from 'redux-thunk'
@@ -17,9 +17,9 @@ const rootReducer=combineReducers({
 const store=createStore(rootReducer,composeEnhancers(applyMiddleware(thunk)))
 
 const app=<Provider store={store}>
-    <BrowserRouter>
+    <HashRouter >
 <App></App>
-    </BrowserRouter>
+    </HashRouter >
 </Provider>
 
 ReactDOM.render(app, document.getElementById('root'));
