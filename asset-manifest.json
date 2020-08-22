@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Ecommerce/static/css/main.e9b1b8f7.chunk.css",
+    "main.js": "/Ecommerce/static/js/main.a3588de8.chunk.js",
+    "main.js.map": "/Ecommerce/static/js/main.a3588de8.chunk.js.map",
+    "runtime-main.js": "/Ecommerce/static/js/runtime-main.66ad74a6.js",
+    "runtime-main.js.map": "/Ecommerce/static/js/runtime-main.66ad74a6.js.map",
+    "static/css/2.3450c87a.chunk.css": "/Ecommerce/static/css/2.3450c87a.chunk.css",
+    "static/js/2.6f23ae14.chunk.js": "/Ecommerce/static/js/2.6f23ae14.chunk.js",
+    "static/js/2.6f23ae14.chunk.js.map": "/Ecommerce/static/js/2.6f23ae14.chunk.js.map",
+    "index.html": "/Ecommerce/index.html",
+    "precache-manifest.71ea55e9b53b48991450ac0c316b852e.js": "/Ecommerce/precache-manifest.71ea55e9b53b48991450ac0c316b852e.js",
+    "service-worker.js": "/Ecommerce/service-worker.js",
+    "static/css/2.3450c87a.chunk.css.map": "/Ecommerce/static/css/2.3450c87a.chunk.css.map",
+    "static/css/main.e9b1b8f7.chunk.css.map": "/Ecommerce/static/css/main.e9b1b8f7.chunk.css.map",
+    "static/js/2.6f23ae14.chunk.js.LICENSE.txt": "/Ecommerce/static/js/2.6f23ae14.chunk.js.LICENSE.txt",
+    "static/media/about.jpg": "/Ecommerce/static/media/about.35133ab3.jpg",
+    "static/media/banner.png": "/Ecommerce/static/media/banner.13d863ab.png",
+    "static/media/bg_1.jpg": "/Ecommerce/static/media/bg_1.31b0ed7c.jpg",
+    "static/media/bg_2.jpg": "/Ecommerce/static/media/bg_2.19695892.jpg",
+    "static/media/bg_4.jpg": "/Ecommerce/static/media/bg_4.ae530647.jpg",
+    "static/media/box.jpg": "/Ecommerce/static/media/box.bf485d67.jpg",
+    "static/media/medal.jpg": "/Ecommerce/static/media/medal.9411e170.jpg",
+    "static/media/person_1.jpg": "/Ecommerce/static/media/person_1.bbcd5413.jpg",
+    "static/media/person_2.jpg": "/Ecommerce/static/media/person_2.2cd3dcd3.jpg",
+    "static/media/person_3.jpg": "/Ecommerce/static/media/person_3.514eee1b.jpg",
+    "static/media/person_4.jpg": "/Ecommerce/static/media/person_4.cfb95125.jpg",
+    "static/media/recommend.jpg": "/Ecommerce/static/media/recommend.963bbd6f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66ad74a6.js",
+    "static/css/2.3450c87a.chunk.css",
+    "static/js/2.6f23ae14.chunk.js",
+    "static/css/main.e9b1b8f7.chunk.css",
+    "static/js/main.a3588de8.chunk.js"
+  ]
+}
