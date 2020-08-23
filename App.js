@@ -57,7 +57,7 @@ class App extends Component {
   signupHandler = (event, authData) => {
     event.preventDefault();
     this.setState({ authLoading: true });
-    fetch(process.env.BACKEND_URL+'/auth/signup', {
+    fetch('https://personalecommerce.herokuapp.com'+'/auth/signup', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -89,7 +89,7 @@ class App extends Component {
   };
   loginHandler=(event,authData)=>{
     event.preventDefault();
-    fetch(process.env.BACKEND_URL+'/auth/login',{
+    fetch('https://personalecommerce.herokuapp.com'+'/auth/login',{
       method:'POST',
       headers:{
         'Content-Type':'application/json'
@@ -138,7 +138,7 @@ class App extends Component {
   responseSuccessGoogle=(response)=>{
     axios({ 
       method:"POST",
-      url:process.env.BACKEND_URL+'/auth/googleLogin',
+      url:'https://personalecommerce.herokuapp.com'+'/auth/googleLogin',
       data:{tokenId:response.tokenId}
     })
     .then(res=>{
@@ -182,7 +182,7 @@ class App extends Component {
   responseFacebook=(response)=>{
     axios({
       method:"POST",
-      url:process.env.BACKEND_URL+'/auth/facebookLogin',
+      url:'https://personalecommerce.herokuapp.com'+'/auth/facebookLogin',
       data:{accessToken:response.accessToken,userID:response.userID,name:response.name}
     })
     .then(response=>{
