@@ -1,3 +1,10 @@
+.product{
+    padding:1rem
+}
+.product:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    z-index: 1;
+}
 .product a {
    background: #fff;
     position: relative;
@@ -39,7 +46,7 @@ p.title {
     line-height: 1.8;
     font-weight: 400;
     color: black;
-    height: 1.5vw;
+    height: 2vw;
     overflow: hidden;
     margin-left: 0.3rem;
     margin-right: 0.3rem;

@@ -35,7 +35,7 @@ const BlockInfor2=props=>{
           .catch(err=>console.log(err));
       };
     return(
-        <section className="ftco-section bg-light">
+        <section className="ftco-section">
         <div className="container">
           <div className="row justify-content-center mb-3 pb-3">
             <div className="col-md-12 heading-section text-center">

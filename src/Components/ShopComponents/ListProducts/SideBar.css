@@ -6,7 +6,7 @@ p.heading{
     font-weight: 700!important;
     padding-left: 0.1rem;
 }
- a{
+ul li{
 font-weight: 700;
 font-size: 0.8rem;
 color: #0000009c;
@@ -43,4 +43,4 @@ form  {
 #price-slider-submit:hover {
 background: #03a9e6;
 color: #fff;
-}
+} 

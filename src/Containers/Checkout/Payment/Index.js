@@ -8,7 +8,7 @@ const Index=props=>{
         <React.Fragment>
         <Header></Header>
         <Shipping isAuth={props.isAuth}></Shipping>
-        <Footer></Footer>   
+        <Footer ></Footer>   
         </React.Fragment>
     )
 }

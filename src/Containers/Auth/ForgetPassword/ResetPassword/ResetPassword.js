@@ -6,7 +6,7 @@ import "./ResetPassword.css";
 import { email,required } from "../../../../util/validators";
 import Footer from '../../../../Components/MainComponents/Footer/Footer'
 
-class Login extends Component {
+class ResetPassword extends Component {
   state = {
     ResetForm: {
       email: {
@@ -114,4 +114,4 @@ class Login extends Component {
     );
   }
 }
-export default Login;
+export default ResetPassword

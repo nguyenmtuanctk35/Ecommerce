@@ -64,12 +64,12 @@ const Footer=props=>{
             </div>
             <div className="col-md">
               <div className="ftco-footer-widget mb-4">
-                <h2 className="ftco-heading-2">Have a Questions?</h2>
+                <h2 className="ftco-heading-2">Contact Information</h2>
                 <div className="block-23 mb-3">
                   <ul style={{listStyle:'none',paddingLeft:'0'}}>
-                    <li><span className="icon"><RoomIcon/></span><span className="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                    <li><span className="icon"><PhoneIcon/></span><span className="text">+2 392 3929 210</span></li>
-                    <li><span className="icon"><EmailIcon/></span><span className="text">info@yourdomain.com</span></li>
+                    <li><span className="icon"><RoomIcon/></span><span className="text">KTX DHQG,Khu phố 6, phường Linh Trung, quận Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam</span></li>
+                    <li><span className="icon"><PhoneIcon/></span><span className="text">039 23 63 634</span></li>
+                    <li><span className="icon"><EmailIcon/></span><span className="text">shinjnt4@gmail.com</span></li>
                   </ul>
                 </div>
               </div>

@@ -7,7 +7,9 @@ const Index=props=>{
         <React.Fragment>
         <Header></Header>
         <Main isAuth={props.isAuth}></Main> 
-        <Footer></Footer>   
+        <div className="container" style={{position:'fixed',bottom:'0'}}>
+        <Footer></Footer>  
+        </div> 
         </React.Fragment>
     )
 }

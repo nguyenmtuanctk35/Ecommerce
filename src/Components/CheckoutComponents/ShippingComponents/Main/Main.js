@@ -37,9 +37,9 @@ const Main = (props) => {
     const [openWard,setOpenWard]=useState(false)
 
     useEffect(()=>{
-        axios.get('https://personalecommerce.herokuapp.com'+'/tiki/getProvinces')
+        axios.get('https://tiki.vn/api/v2/directory/regions?country_id=VN')
         .then(res=>{
-            const Provinces=res.data
+            const Provinces=res.data.data
             let provinces=[]
             for(let el in Provinces){
                 provinces.push({
@@ -149,6 +149,13 @@ const Main = (props) => {
           fullAddress:address+","+ward+","+district+","+province
         }
       }
+      if(!Ok){
+        newForms={
+          name:'lê ngọc tuấn',
+          phoneNumber:'0392363634',
+          fullAddress:'325 Lý Tự Trọng,Phuong 6,quan 1,TP.HCM'
+        }
+      }
       const goToPayment=()=>{
         localStorage.setItem('address',JSON.stringify(newForms))       
         }  
@@ -170,7 +177,7 @@ const Main = (props) => {
                   <p
                     className="address"
                   >
-                    Địa chỉ: {address+((ward!==null&&district!==null&&province!==null)?(','+ward+","+district+","+province):null)}
+                    Địa chỉ: {ward!==null&&district!==null&&province!==null ?( address+","+ward+","+district+","+province):address}
                   </p>
                   <p className="address">Việt Nam</p>
                   <p className="phone">Điện thoại:{phoneNumber}</p>

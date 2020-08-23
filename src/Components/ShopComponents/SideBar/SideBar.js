@@ -29,17 +29,17 @@ const SideBar =props=>{
         <p className="heading mb-2 listProduct">ĐÁNH GIÁ</p>
           <ul style={{listStyle:'none',paddingLeft:'1.5rem'}}>
           <li>
-            
-            <NavLink to="/yzx">
             <Typography component="legend">Từ 5 sao</Typography>
-            <Rating name="read-only" value={5} readOnly /></NavLink></li>
-          <li><NavLink to="/yzx">
+            <Rating name="read-only" value={5} readOnly />
+          </li>
+          <li>
           <Typography component="legend">Từ 4 sao</Typography>
             <Rating name="read-only" value={4} readOnly />
-            </NavLink></li>
-          <li><NavLink to="/yzx">
+           </li>
+          <li>
           <Typography component="legend">Từ 3 sao</Typography>
-            <Rating name="read-only" value={3} readOnly /></NavLink></li>         
+            <Rating name="read-only" value={3} readOnly />
+            </li>         
           </ul>
         </div>
         <div className="sidebar-box-2">

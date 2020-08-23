@@ -106,9 +106,9 @@ class Login extends Component {
                   ></Input>
                   <div className="giCheck">
                     <div className="giMore">
-                      <a href="/reset" className="forgetPass">
+                      <NavLink to="/reset-password" className="forgetPass">
                         Forget your Password
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                   <Button auth="SIGN IN"></Button>

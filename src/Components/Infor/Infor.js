@@ -32,7 +32,7 @@ const Infor = (props) => {
  let productId = history.location.pathname.split("/");
  
   const loadProduct = async () => {
-        if(productId[1]!=="signup"&&productId[1]!=="login"&&productId[1]!=="payment"){
+        if(productId[1]!=="signup"&&productId[1]!=="login"&&productId[1]!=="payment"&&productId[1]!=="shipping"){
            await fetch('https://personalecommerce.herokuapp.com'+"/products/productsShop/" + productId[1])
         .then((res) => {
           if (res.status !== 200) {

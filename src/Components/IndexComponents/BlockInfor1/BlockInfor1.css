@@ -1,75 +1,68 @@
-.imgBlock1{
-    position: relative;
-}
 
-.imgBlock1 a.icon span svg{
-    width: 100px;
-    height: 100px;
-    color:black
+.vc_custom_1558344028850 {
+    padding-top: 130px!important;
 }
-.imgBlock1 a.icon span svg:hover{
-    width: 100px;
-    height: 100px;
-    color:white
+.vc_col-sm-6 {
+    width: 50%;
 }
-.wrap-about{
+.vc_column_container>.vc_column-inner {
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+.wpb_single_image.vc_align_left {
+    text-align: left;
+}
+.wpb_single_image .vc_figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    max-width: 100%;
+}
+.wpb_single_image .vc_single_image-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+.wpb_single_image img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+.vc_column_container {
+    padding-left: 0;
+    padding-right: 0;
+}
+.vc_custom_1553567155410 {
+    margin-right: -90px!important;
+    margin-bottom: 69px!important;
+}
+.nexio-title.style-01 .block-title {
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.nexio-title.style-01 .block-desc {
+    font-family: 'roboto',sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #423030ab;
+}
+.nexio-title.style-01 .button {
+    margin-top: 2rem;
     position: relative;
-    padding-left: 3em!important
-}
-.wrap-about .heading-section-bold{
-    margin-top: 3rem !important;
-
-}
-.wrap-about .heading-section-bold h2 {
-    font-size: 2.5em;
-    font-weight: 600;
-    color: #000000;
-    line-height: 1.5;
-    padding-right: 1rem!important;
-}
-.ftco-services .services {
-    display: block;
-    width: 100%;
-    margin-bottom: 2.5rem  
-}
-.ftco-services .services .icon {
-    line-height: 1.3;
-    position: relative;
-    margin: 0 auto;
-    border-radius: 50%;
-}
-.ftco-services .services .icon span {
-    width: calc(70em/16);
-    height: calc(70em/16);
-    color: #000000;
-}
-.ftco-services .services .icon span img{
-    width: 100%;
-    height: 100%;
-}
-.ftco-services .services .media-body {
-    width: 100%;
-}
-.ftco-services .services .media-body h3 {
-    font-size: 0.875em;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 1.25rem;
-    letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    display: inline-block;
+    padding-bottom: 8px;
     color: black;
-    font-family: inherit;
+    font-weight: 700;
+    border-bottom: 5px solid black;
 }
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    font-size: calc(15em/16);
-    line-height: 1.8;
-    font-weight: 400;
-    color: gray;
-}
-.img-2 .icon {
-    width: 100px;
-    height: 100px;
-    background: #ffa45c;
-    border-radius: 50%;
+.nexio-title.style-01 .button:hover{
+    color: red;
+    border-bottom: 5px solid red;
+    
 }

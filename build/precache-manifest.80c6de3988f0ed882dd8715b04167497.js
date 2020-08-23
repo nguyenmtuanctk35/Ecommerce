@@ -1,35 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcc4b09a44211e6105b45b88e324bf3d",
+    "revision": "55aed476d793c6568962fbc735956eba",
     "url": "/Ecommerce/index.html"
   },
   {
-    "revision": "05272df7f6b157f79cc2",
+    "revision": "2ecf4160dec9ad1fc6bb",
     "url": "/Ecommerce/static/css/2.3450c87a.chunk.css"
   },
   {
-    "revision": "f642e5c16d78286acf06",
-    "url": "/Ecommerce/static/css/main.e9b1b8f7.chunk.css"
+    "revision": "f0e3ad3ef708dc68363a",
+    "url": "/Ecommerce/static/css/main.17193374.chunk.css"
   },
   {
-    "revision": "05272df7f6b157f79cc2",
-    "url": "/Ecommerce/static/js/2.269b7bac.chunk.js"
+    "revision": "2ecf4160dec9ad1fc6bb",
+    "url": "/Ecommerce/static/js/2.c4f416ec.chunk.js"
   },
   {
     "revision": "25de31290819161a02990a43be52fc26",
-    "url": "/Ecommerce/static/js/2.269b7bac.chunk.js.LICENSE.txt"
+    "url": "/Ecommerce/static/js/2.c4f416ec.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f642e5c16d78286acf06",
-    "url": "/Ecommerce/static/js/main.9b59c27f.chunk.js"
+    "revision": "f0e3ad3ef708dc68363a",
+    "url": "/Ecommerce/static/js/main.5c6220d2.chunk.js"
   },
   {
     "revision": "65ad8180acdc1e7974b8",
     "url": "/Ecommerce/static/js/runtime-main.66ad74a6.js"
-  },
-  {
-    "revision": "35133ab364831cff43c977fc147d25f1",
-    "url": "/Ecommerce/static/media/about.35133ab3.jpg"
   },
   {
     "revision": "13d863aba2fd4854390928cd47f3dfc6",
@@ -48,14 +44,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Ecommerce/static/media/bg_4.ae530647.jpg"
   },
   {
-    "revision": "bf485d677b3ae928da19b54011dadd06",
-    "url": "/Ecommerce/static/media/box.bf485d67.jpg"
-  },
-  {
-    "revision": "9411e170530a2fd89aff276b1d22fa7d",
-    "url": "/Ecommerce/static/media/medal.9411e170.jpg"
-  },
-  {
     "revision": "bbcd5413ffcc46f7d9eef5fb36340659",
     "url": "/Ecommerce/static/media/person_1.bbcd5413.jpg"
   },
@@ -70,9 +58,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cfb95125014362aa10870999ff5d645d",
     "url": "/Ecommerce/static/media/person_4.cfb95125.jpg"
-  },
-  {
-    "revision": "963bbd6f3636e7d74108d430dbed9ddf",
-    "url": "/Ecommerce/static/media/recommend.963bbd6f.jpg"
   }
 ]);

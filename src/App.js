@@ -229,14 +229,15 @@ class App extends Component {
   render () {
     let routes=(
       <Switch>
+        
  <Route 
-        path="/reset"
+        path="/reset-password"
         exact
         render={props=>(
           <ResetPassword {...props}></ResetPassword>
         )}
         />
-        <Route path="/reset/:token" exact render={props=>(<SetNewPassword {...props} />)}></Route>
+        <Route path="/reset-password/:token" exact render={props=>(<SetNewPassword {...props} />)}></Route>
       <Route
         path="/login"
         exact

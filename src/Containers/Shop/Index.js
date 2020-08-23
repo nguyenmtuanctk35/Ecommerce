@@ -2,8 +2,7 @@ import React from 'react'
 import SubNavagation from '../../Components/MainComponents/SubNavigation/SubNavigation'
 import Navigation from '../../Components/MainComponents/Navigation/Navigation'
 import Footer from '../../Components/MainComponents/Footer/Footer'
-import SideBar from '../../Components/ShopComponents/SideBar/SideBar'
-import ListProducts from '../../Components/ShopComponents/ListProducts/ListProducts'
+import Main from '../../Components/ShopComponents/ListProducts/Main'
  const Index=(props)=>{
         return (
             <div>
@@ -12,8 +11,7 @@ import ListProducts from '../../Components/ShopComponents/ListProducts/ListProdu
                 <main style={{backgroundColor:'#efefef'}}> 
                       <div className="container" style={{backgroundColor:'white'}}>
                     <div className="row">
-                          <SideBar></SideBar>
-                <ListProducts></ListProducts>
+                    <Main></Main>
                     </div>
                 </div>    
                 </main>
