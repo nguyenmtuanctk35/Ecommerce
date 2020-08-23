@@ -24,7 +24,7 @@ export const fetchProductsFail=error=>{
 export const fetchProductsIndex=()=>{
     return dispatch=>{
         dispatch(fetchProductsStart())
-        fetch(process.env.BACKEND_URL+'/products/productsHomePage')
+        fetch('https://personalecommerce.herokuapp.com'+'/products/productsHomePage')
             .then(res=>{
                 let fetchedProducts=[];
                 for(let key in res.data.products){
@@ -44,7 +44,7 @@ export const fetchProductsIndex=()=>{
 export const fetchProductsShop=()=>{
     return dispatch=>{
         dispatch(fetchProductsStart());
-       axios.get(process.env.BACKEND_URL+'/products/productsShop')
+       axios.get('https://personalecommerce.herokuapp.com'+'/products/productsShop')
             .then(res=>{
                 let fetchedProducts=[];
                 for(let key in res.data.products){

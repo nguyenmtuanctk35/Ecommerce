@@ -19,7 +19,7 @@ const ListProducts =props=> {
 
     let history=useHistory();
    const loadPosts =async () => {
-      await fetch(process.env.BACKEND_URL+'/products/productsShop?page=' + page)
+      await fetch('https://personalecommerce.herokuapp.com'+'/products/productsShop?page=' + page)
           .then(res=>{
               if(res.status !==200){
                   throw new Error('Failed to fetch!')

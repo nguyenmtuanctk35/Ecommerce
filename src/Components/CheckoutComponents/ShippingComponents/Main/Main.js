@@ -37,7 +37,7 @@ const Main = (props) => {
     const [openWard,setOpenWard]=useState(false)
 
     useEffect(()=>{
-        axios.get(process.env.BACKEND_URL+'/tiki/getProvinces')
+        axios.get('https://personalecommerce.herokuapp.com'+'/tiki/getProvinces')
         .then(res=>{
             const Provinces=res.data
             let provinces=[]

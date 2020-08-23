@@ -21,7 +21,7 @@ class Login extends Component {
 
   resetPasswordHandler=async(event,authData)=>{
     event.preventDefault();
-    fetch(process.env.BACKEND_URL+'/auth/reset-password',{
+    fetch('https://personalecommerce.herokuapp.com'+'/auth/reset-password',{
       method:'POST',
       headers:{
         'Content-Type':'application/json'

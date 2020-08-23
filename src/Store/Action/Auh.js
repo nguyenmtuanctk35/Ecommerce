@@ -47,7 +47,7 @@ export const login=(event,authData)=>{
     event.preventDefault();
     return dispatch=>{
         dispatch(authStart())
-            fetch(process.env.BACKEND_URL+'/auth/login',{
+            fetch('https://personalecommerce.herokuapp.com'+'/auth/login',{
                 method:'POST',
                 headers:{
                     'Content-Typpe':'application/json'
@@ -86,7 +86,7 @@ export const login=(event,authData)=>{
 export const signup=(event,authData)=>{
     event.preventDefault();
     return dispatch=>{
-        fetch(process.env.BACKEND_URL+'/auth/signup')
+        fetch('https://personalecommerce.herokuapp.com'+'/auth/signup')
     }
 }
 export const authCheckState=()=>{

@@ -33,7 +33,7 @@ const Infor = (props) => {
  
   const loadProduct = async () => {
         if(productId[1]!=="signup"&&productId[1]!=="login"&&productId[1]!=="payment"){
-           await fetch(process.env.BACKEND_URL+"/products/productsShop/" + productId[1])
+           await fetch('https://personalecommerce.herokuapp.com'+"/products/productsShop/" + productId[1])
         .then((res) => {
           if (res.status !== 200) {
             throw new Error("Failed to fetch!");

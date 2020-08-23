@@ -10,7 +10,7 @@ const Index=props=>{
     const completeOrder=()=>{
         axios({
             method:'POST',
-            url:process.env.BACKEND_URL+'/order/createOrder',
+            url:'https://personalecommerce.herokuapp.com'+'/order/createOrder',
             data:{
                 cart:Cart,
                 address:Address,
