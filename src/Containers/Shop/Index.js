@@ -4,6 +4,7 @@ import Navigation from '../../Components/MainComponents/Navigation/Navigation'
 import Footer from '../../Components/MainComponents/Footer/Footer'
 import Main from '../../Components/ShopComponents/ListProducts/Main'
  const Index=(props)=>{
+  
         return (
             <div>
                 <SubNavagation isAuth={props.isAuth}></SubNavagation>
@@ -15,7 +16,6 @@ import Main from '../../Components/ShopComponents/ListProducts/Main'
                     </div>
                 </div>    
                 </main>
-                       
                 <Footer></Footer>
             </div>
         )

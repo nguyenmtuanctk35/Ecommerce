@@ -229,24 +229,9 @@ class App extends Component {
   render () {
     let routes=(
       <Switch>
-          <Route
-            path="/"
-            exact
-            render={props => (
-              <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
-            )}
-          />
+         
        
-           <Route
-      path="/shop"
-      exact
-      render={props=>(
-        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
-      )}
-    ></Route>
-      <Route path="/:productId" 
-         render={props=>(< DetailProduct {...props}  userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}
-          ></ DetailProduct>)} />
+         
        
  <Route 
         path="/reset-password"
@@ -287,28 +272,31 @@ class App extends Component {
     
       <Route path="/cart" exact
        render={(matchProps)=>(<Cart {...matchProps} {...this.props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Cart>)}></Route>
-      <Redirect to="/" />
-    </Switch>
-    )
-    if(this.state.isAuth){
-      routes=(
-        <Switch>
-          <Route
+        <Route
+      path="/shop"
+      exact
+      render={props=>(
+        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
+      )}
+    ></Route>
+      <Route path="/:productId" 
+         render={props=>(< DetailProduct {...props}  userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}
+          ></ DetailProduct>)} />
+      <Route
             path="/"
             exact
             render={props => (
               <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
             )}
           />
-
-             <Route
-      path="/shop"
-      exact
-      render={props=>(
-        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
-      )}
-      ></Route>
-                     <Route path="/:productId"  render={props=>(< DetailProduct {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></ DetailProduct>)} />
+      <Redirect to="/" />
+    </Switch>
+    )
+    if(this.state.isAuth){
+      routes=(
+        <Switch>
+         
+           
 
             <Route path="/logout" exact 
             render={props=>(<Logout {...props} onLogout={this.logoutHandler}></Logout>)} ></Route>
@@ -326,6 +314,22 @@ class App extends Component {
    
    
     <Route path="/completeOrder" exact render={props=>(<CompleteOrder {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></CompleteOrder>)} ></Route>
+    <Route
+      path="/shop"
+      exact
+      render={props=>(
+        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
+      )}
+      ></Route>
+                     <Route path="/:productId"  render={props=>(< DetailProduct {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></ DetailProduct>)} />
+    <Route
+            path="/"
+            exact
+            render={props => (
+              <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
+            )}
+          />
+
       <Redirect to="/" />
         </Switch>
       )

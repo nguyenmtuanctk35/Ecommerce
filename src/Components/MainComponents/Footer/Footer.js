@@ -9,8 +9,10 @@ import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import './Footer.css'
 
 const Footer=props=>{
-    const handleClick=()=>{
-      window.scrollTo({ top: 0, behavior: 'smooth' });    }
+  
+  const handleClick=()=>{
+    window.scrollTo(0, 0);
+}
     return(
         <footer className=" bg-light ftco-section ftco-footer" style={{marginTop: '1rem'}}>
         <div className="container" style={{paddingTop:'2rem'}}>

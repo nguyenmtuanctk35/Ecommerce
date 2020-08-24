@@ -32,7 +32,7 @@ const Infor = (props) => {
   let params=useParams()
   let productId=params.productId
   const loadProduct = async () => {
-        if(productId!=="signup"&&productId!=="login"&&productId!=="payment"&&productId!=="shipping"&&!productId.includes('shop&price=')){
+        if(productId!=="signup"&&productId!=="login"&&productId!=="payment"&&productId!=="shipping"&&productId!=="cart"&&!productId.includes('shop&price=')){
         await fetch('https://personalecommerce.herokuapp.com'+"/products/productsShop/" + productId)
         .then((res) => {
           if (res.status !== 200) {
