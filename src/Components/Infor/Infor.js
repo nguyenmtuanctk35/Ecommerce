@@ -156,7 +156,7 @@ const Infor = (props) => {
                 
                {(product.configurable_products!==null&&product.configurable_products!==undefined)?product.configurable_products[0].images.slice(0,4).map(el=>(
                        <Link  to={el.medium_url} key={el.medium_url}>
-                    <div alt="" className="active">
+                    <div alt="">
                   <img
                     src={el.medium_url}
                     alt=""
@@ -172,7 +172,7 @@ const Infor = (props) => {
                 <div className="ImageLens__Wrapper-uaw433-0 jcyqbC">
                   <div className="container">
                     <img
-                      src="https://salt.tikicdn.com/cache/w390/ts/product/02/7c/dd/06a00feffcaf46e3edc7f97b845a3391.jpg"
+                      src={product.thumbnail_url}
                       alt=""
                     />
                   </div>

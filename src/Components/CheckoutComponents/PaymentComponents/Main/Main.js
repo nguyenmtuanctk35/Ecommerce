@@ -25,7 +25,9 @@ const Main = (props) => {
   };
   let myCart = localStorage.getItem("myCart");
   let userId = localStorage.getItem("userId");
-  let address = localStorage.getItem("address");
+  let address = JSON.parse(localStorage.getItem("address"));
+
+console.log(address)
   let totalPrice = 0;
   JSON.parse(myCart).map(
     (el) => (totalPrice += parseInt(el.counter, 10) * parseInt(el.price, 10))
