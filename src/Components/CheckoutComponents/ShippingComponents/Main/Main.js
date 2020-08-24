@@ -39,7 +39,8 @@ const Main = (props) => {
     useEffect(()=>{
         axios.get('https://vapi.vnappmob.com/api/province')
         .then(res=>{
-            const Provinces=res.results
+          // console.log(res)
+            const Provinces=res.data.results
             let provinces=[]
             for(let el in Provinces){
                 provinces.push({
@@ -56,7 +57,8 @@ const Main = (props) => {
         if(districtsId!==undefined&&districtsId!==null){
     axios.get(`https://vapi.vnappmob.com/api/province/district/${districtsId}`)
         .then(res=>{
-            const Districts=res.results;
+            const Districts=res.data.results;
+            // console.log(res)
             let districts=[];
             for(let el in Districts){
                 districts.push({
@@ -74,7 +76,7 @@ const Main = (props) => {
         if(wardsId!==undefined&&wardsId!==null){
     axios.get(`https://vapi.vnappmob.com/api/province/ward/${wardsId}`)
         .then(res=>{
-            const Wards=res.results
+            const Wards=res.data.results
             let wards=[];
             for(let el in Wards){
                 wards.push({
