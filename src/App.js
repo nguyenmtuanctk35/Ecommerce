@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Route,Switch,Redirect,withRouter} from 'react-router-dom'
 import axios from 'axios'
-
-import Login from './Containers/Auth/Login/Login'
-import Signup from './Containers/Auth/Signup/Signup';
+import Login from  './Containers/Auth/Login/Login'
+import Signup from './Containers/Auth/Signup/Signup'
 import Logout from './Containers/Auth/Logout/Logout'
 import ResetPassword from './Containers/Auth/ForgetPassword/ResetPassword/ResetPassword'
 import SetNewPassword from './Containers/Auth/ForgetPassword/NewPassword/NewPassword'
-import Index from './Containers/Index/Index'
-import Shop from './Containers/Shop/Index'
-import DetailProduct from './Containers/DetailProduct/Index';
-
-import Cart from './Containers/Checkout/ShoppingCart/Index'
-import Shipping from './Containers/Checkout/Shipping/Index'
+import Index from'./Containers/Index/Index'
+import Shop from'./Containers/Shop/Index'
+import DetailProduct from'./Containers/DetailProduct/Index'
+import Cart from'./Containers/Checkout/ShoppingCart/Index'
+import Shipping from'./Containers/Checkout/Shipping/Index'
 import Payment from './Containers/Checkout/Payment/Index'
-import CompleteOrder from './Containers/Checkout/Index'
+import CompleteOrder from'./Containers/Checkout/Index'
+
+
 class App extends Component {
   state = {
     isAuth: false,
@@ -229,7 +229,25 @@ class App extends Component {
   render () {
     let routes=(
       <Switch>
-        
+          <Route
+            path="/"
+            exact
+            render={props => (
+              <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
+            )}
+          />
+       
+           <Route
+      path="/shop"
+      exact
+      render={props=>(
+        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
+      )}
+    ></Route>
+      <Route path="/:productId" 
+         render={props=>(< DetailProduct {...props}  userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}
+          ></ DetailProduct>)} />
+       
  <Route 
         path="/reset-password"
         exact
@@ -237,7 +255,9 @@ class App extends Component {
           <ResetPassword {...props}></ResetPassword>
         )}
         />
+       
         <Route path="/reset-password/:token" exact render={props=>(<SetNewPassword {...props} />)}></Route>
+       
       <Route
         path="/login"
         exact
@@ -252,6 +272,8 @@ class App extends Component {
           />
         )}
       />
+     
+     
       <Route
         path="/signup"
         exact
@@ -262,64 +284,55 @@ class App extends Component {
           />
         )}
       />
-     
-      <Route
-      path="/shop"
-      exact 
-      render={props=>(
-        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
-      )}
-      ></Route>
+    
       <Route path="/cart" exact
-       render={props=>(<Cart {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Cart>)}></Route>
-        <Route
-            path="/"
-            exact
-            render={props => (
-              <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
-            )}
-          />
-          
-        <Route path="/:productId" exact
-         render={props=>(< DetailProduct {...props}  userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}
-          ></ DetailProduct>)} />
+       render={(matchProps)=>(<Cart {...matchProps} {...this.props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Cart>)}></Route>
       <Redirect to="/" />
     </Switch>
     )
     if(this.state.isAuth){
       routes=(
         <Switch>
-            <Route path="/logout" exact 
-            render={props=>(<Logout {...props} onLogout={this.logoutHandler}></Logout>)} ></Route>
-       <Route
-      path="/shop"
-      exact 
-      render={props=>(
-        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
-      )}
-      ></Route>
-      <Route path="/cart" exact  render={props=>(<Cart {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Cart>)}></Route>
-     <Route path="/shipping" exact render={props=>(<Shipping {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />)}></Route>
-     <Route path="/payment" 
-      exact render={props=>(<Payment {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />)}></Route>
-    <Route path="/completeOrder" exact render={props=>(<CompleteOrder {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></CompleteOrder>)} ></Route>
-     <Route path="/:productId" exact render={props=>(< DetailProduct {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></ DetailProduct>)} />
-
-        <Route
+          <Route
             path="/"
             exact
             render={props => (
               <Index userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />
             )}
           />
-          
+
+             <Route
+      path="/shop"
+      exact
+      render={props=>(
+        <Shop {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Shop>
+      )}
+      ></Route>
+                     <Route path="/:productId"  render={props=>(< DetailProduct {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></ DetailProduct>)} />
+
+            <Route path="/logout" exact 
+            render={props=>(<Logout {...props} onLogout={this.logoutHandler}></Logout>)} ></Route>
+        
+     
+     
+      <Route path="/cart" exact  render={props=>(<Cart {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></Cart>)}></Route>
+    
+    
+     <Route path="/shipping" exact render={props=>(<Shipping {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />)}></Route>
+    
+    
+     <Route path="/payment" 
+      exact render={props=>(<Payment {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth} />)}></Route>
+   
+   
+    <Route path="/completeOrder" exact render={props=>(<CompleteOrder {...props} userId={this.state.userId} token={this.state.token} isAuth={this.state.isAuth}></CompleteOrder>)} ></Route>
       <Redirect to="/" />
         </Switch>
       )
     }
 
     return (
-      <div>
+      <div>       
        {routes}
       </div>
    

@@ -25,7 +25,7 @@ const navigation=(props)=>{
                 <NavLink to="/" exact={true} className="nav-link">Home</NavLink></li>
               <li className="nav-item"><NavLink to={{
                 pathname:'/shop',
-                search:"?page=1"
+                search:"?price=9800%2C766500&rating=0&page=1"
               }} className="nav-link">Shop</NavLink></li>
               <li className="nav-item"><a href="https://tiki.vn/gioi-thieu-ve-tiki" className="nav-link">About</a></li>
               <li className="nav-item"><a href="/contact" className="nav-link">Contact</a></li>

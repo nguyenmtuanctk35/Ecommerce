@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import Rating from "@material-ui/lab/Rating";
 import Box from "@material-ui/core/Box";
-import { useHistory,Link } from "react-router-dom";
+import { useHistory,Link,useParams } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 import FavoriteBorderOutlinedIcon from "@material-ui/icons/FavoriteBorderOutlined";
 import "./Infor.css";
@@ -29,11 +29,11 @@ const Infor = (props) => {
       setCounter(count.current.value);
     }
   };
- let productId = history.location.pathname.split("/");
- 
+  let params=useParams()
+  let productId=params.productId
   const loadProduct = async () => {
-        if(productId[1]!=="signup"&&productId[1]!=="login"&&productId[1]!=="payment"&&productId[1]!=="shipping"){
-           await fetch('https://personalecommerce.herokuapp.com'+"/products/productsShop/" + productId[1])
+        if(productId!=="signup"&&productId!=="login"&&productId!=="payment"&&productId!=="shipping"&&!productId.includes('shop&price=')){
+        await fetch('https://personalecommerce.herokuapp.com'+"/products/productsShop/" + productId)
         .then((res) => {
           if (res.status !== 200) {
             throw new Error("Failed to fetch!");
@@ -48,7 +48,8 @@ const Infor = (props) => {
     };
   useEffect(() => {
     loadProduct();
-  }, [productId[1]]);
+    window.scrollTo(0,0)
+  }, [productId]);
 
   let currentSeller = "";
   let otherSeller = [];

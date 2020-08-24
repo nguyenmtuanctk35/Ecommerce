@@ -9,50 +9,75 @@ import InputRange from 'react-input-range';
 import './ListProducts.css'
 import './SideBar.css'
 import 'react-input-range/lib/css/index.css'
-
 const imgSrc=require('../../../Assets/banner.png')
 
+function change_alias(alias) {
+ let str = alias;
+  str = str.toLowerCase();
+  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g,"a"); 
+  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g,"e"); 
+  str = str.replace(/ì|í|ị|ỉ|ĩ/g,"i"); 
+  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g,"o"); 
+  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g,"u"); 
+  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y"); 
+  str = str.replace(/đ/g,"d");
+  str = str.replace(/!|@|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\;|\'|\"|\&|\#|\[|\]|~|\$|_|`|-|{|}|\||\\/g," ");
+  str = str.replace(/ + /g," ");
+  str = str.trim(); 
+  return str;
+}
 const ListProducts =props=> {
  
     const initialPage=parseInt(localStorage.getItem('page'),10)
     const [page,setPage]=useState((initialPage)||1);
     const [posts,setPosts]=useState([]);
-    let [filterProducts,setFilterProducts]=useState([]) 
     const [totalPosts,setTotalPosts]=useState(0)
     const [value, setValue] = useState({min:9800,max:766500});
+    const [priceRange,setPriceRange]=useState({min:9800,max:766500})
+    const [rating,setRating]=useState(0)
+    const [typeClothes,setTypeClothes]=useState('')
     let history=useHistory();
-    let options1=['Trang phục nữ','Đồ ngủ, đồ mặc nhà, đồ lót, đồ bơi','Phụ kiện nữ','Giày dép nữ']
-    useEffect(()=>{
+   useEffect(()=>{
          loadPosts();
-         history.push('/shop?='+page)
-    },[page])
-    
-    const filterOption1=async(option)=>{
-        if(filterProducts===null){
-          filterProducts=filterProducts.filter(el=>el.productset_group_name.split('/')[2]===option)
-          setFilterProducts(filterProducts)
+        if(typeClothes===''){
+          history.push('/shop?price='+priceRange.min+'%2C'+priceRange.max+'&rating='+rating+'&page='+page)
         }
-        filterProducts=posts.filter(el=>el.productset_group_name.split('/')[2]===option)
-        setFilterProducts(filterProducts)
+        else{
+        history.push('/shop/'+urlPara+'/'+'?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page)
+
+        }
+      },[page,priceRange,rating])
+    
+    let options1=['Trang phục nữ','Đồ ngủ, đồ mặc nhà, đồ lót, đồ bơi','Phụ kiện nữ','Giày dép nữ']
+    let urlPara=null
+    if(typeClothes!==''){
+      urlPara=((encodeURIComponent(change_alias(typeClothes)).split('%20')).join('-'))
+    }
+    // console.log(((encodeURIComponent(change_alias(options1[1]))).split('%20')).join('-'))
+    const filterOption1=async(option)=>{
+      setTypeClothes(option)
+      await localStorage.setItem('typeClothes',typeClothes)
+      window.scrollTo(0,0)
     }
     const filterOption2=async(option)=>{
-      if(filterProducts===null){
-        filterProducts=posts.filter(el=>el.rating_average>=option)
-        setFilterProducts(filterProducts)
-      }
-        filterProducts=filterProducts.filter(el=>el.rating_average>=option)
-        setFilterProducts(filterProducts)
+        setRating(option)
+        await localStorage.setItem('rating',rating)
+        window.scrollTo(0,0)
     }
     const filterOption3=async()=>{
-      if(filterProducts===null){
-        filterProducts=posts.filter(el=>el.price>=value.min&&el.price <=value.max)
-        setFilterProducts(filterProducts)
-      } 
-        filterProducts=filterProducts.filter(el=>el.price>=value.min&&el.price <=value.max)
-        setFilterProducts(filterProducts)
+    setPriceRange({min:value.min,max:value.max});
+     await localStorage.setItem('priceRange',priceRange)
+     window.scrollTo(0,0)
     }
+  
    const loadPosts =async () => {
-      await fetch('https://personalecommerce.herokuapp.com'+'/products/productsShop?page=' + page)
+    let url='https://personalecommerce.herokuapp.com/products/productsShop?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
+    if(typeClothes!==''){
+      let url='https://personalecommerce.herokuapp.com/products/productsShop/'+urlPara+'/'+'?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
+        }
+     
+    
+      await fetch(url)
           .then(res=>{
               if(res.status !==200){
                   throw new Error('Failed to fetch!')
@@ -74,22 +99,18 @@ const ListProducts =props=> {
             setTotalPosts(totalPages)
         })
           .catch(err=>console.log(err));
-      };
-  
-    
-      const handleChange=async(event,value)=>{
-          setPage(value);
-      await localStorage.setItem('page',value);
-        
+      };    
+      const handleChangePage=async(event,valuePage)=>{
+          setPage(valuePage);
+      await localStorage.setItem('page',valuePage);     
      window.scrollTo(0,0)
       }
-      console.log(filterProducts)
     return (
         <React.Fragment>
         <div className="col-md-4 col-lg-2 sidebar" style={{display:'inline-block',marginTop:'22rem',paddingLeft:'0.4rem'}}>
         <div className="sidebar-box-2">
           <p className="heading mb-2 listProduct">DANH MỤC SẢN PHẨM</p>
-          <ul style={{listStyle:'none',paddingLeft:'1.5rem'}}>
+          <ul className="t" style={{listStyle:'none',paddingLeft:'1.5rem'}}>
             <li onClick={()=>filterOption1(options1[0])}>{options1[0]}(211)</li>
             <li onClick={()=>filterOption1(options1[1])}>{options1[1]}(104)</li>
             <li onClick={()=>filterOption1(options1[2])}>{options1[2]}(107)</li>
@@ -98,17 +119,17 @@ const ListProducts =props=> {
         </div>
         <div className="sidebar-box-2">
         <p className="heading mb-2 listProduct">ĐÁNH GIÁ</p>
-          <ul style={{listStyle:'none',paddingLeft:'1.5rem'}}>
+          <ul className="rating" style={{listStyle:'none',paddingLeft:'1.5rem'}}>
           <li onClick={()=>filterOption2(5)}>
             <Typography component="legend">Từ 5 sao</Typography>
-            <Rating name="read-only" value={5} readOnly /></li>
+            <Rating name="read-only" precision={0.1} value={5} readOnly /></li>
           <li onClick={()=>filterOption2(4)}>
           <Typography component="legend">Từ 4 sao</Typography>
-            <Rating name="read-only" value={4} readOnly />
+            <Rating name="read-only" precision={0.1} value={4} readOnly />
             </li>
           <li onClick={()=>filterOption2(3)}>
           <Typography component="legend">Từ 3 sao</Typography>
-            <Rating name="read-only" value={3} readOnly /></li>         
+            <Rating name="read-only" precision={0.1} value={3} readOnly /></li>         
           </ul>
         </div>
         <div className="sidebar-box-2">
@@ -130,7 +151,7 @@ const ListProducts =props=> {
             <img src={imgSrc} alt="" style={{width:'100%',height:'auto',display:'block'}}></img>
        <Paginator 
        >
-             {(filterProducts===null?filterProducts:posts).map(el=>(
+             {posts.map(el=>(
                 <Block key={el.id} imgSrc={el.thumbnail_url} link={el.id}
                title={el.name}
                price={el.list_price}
@@ -138,7 +159,7 @@ const ListProducts =props=> {
                ></Block>              
            ))}
        </Paginator>
-       <Pagination  color="primary"  count={totalPosts} page={page} onChange={handleChange} />
+       <Pagination  color="primary"  count={totalPosts} page={page} onChange={handleChangePage} />
          </div>
         </React.Fragment>
    

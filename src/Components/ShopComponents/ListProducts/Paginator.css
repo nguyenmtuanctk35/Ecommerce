@@ -26,4 +26,9 @@
   .paginator__control:focus {
     outline: none;
   }
-  
+  ul.rating li{
+    cursor: pointer;
+  }
+  ul.t li{
+    cursor: pointer;
+  }
