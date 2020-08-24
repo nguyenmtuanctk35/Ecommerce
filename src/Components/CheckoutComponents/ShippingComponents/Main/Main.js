@@ -37,14 +37,14 @@ const Main = (props) => {
     const [openWard,setOpenWard]=useState(false)
 
     useEffect(()=>{
-        axios.get('https://tiki.vn/api/v2/directory/regions?country_id=VN')
+        axios.get('https://vapi.vnappmob.com/api/province')
         .then(res=>{
-            const Provinces=res.data.data
+            const Provinces=res.results
             let provinces=[]
             for(let el in Provinces){
                 provinces.push({
-                    name:Provinces[el].name,
-                    id:Provinces[el].id
+                    name:Provinces[el].province_name,
+                    id:Provinces[el].province_id
                 })
             }
             setProvinces(provinces)
@@ -54,14 +54,14 @@ const Main = (props) => {
 
     useEffect(()=>{
         if(districtsId!==undefined&&districtsId!==null){
-    axios.get(`https://tiki.vn/api/v2/directory/districts?region_id=${districtsId}`)
+    axios.get(`https://vapi.vnappmob.com/api/province/district/${districtsId}`)
         .then(res=>{
-            const Districts=res.data.data;
+            const Districts=res.results;
             let districts=[];
             for(let el in Districts){
                 districts.push({
-                    name:Districts[el].name,
-                    id:Districts[el].id
+                    name:Districts[el].district_name,
+                    id:Districts[el].district_id
                 })    
             }
             setDistricts(districts)
@@ -72,14 +72,14 @@ const Main = (props) => {
 
     useEffect(()=>{
         if(wardsId!==undefined&&wardsId!==null){
-    axios.get(`https://tiki.vn/api/v2/directory/wards?district_id=${wardsId}`)
+    axios.get(`https://vapi.vnappmob.com/api/province/ward/${wardsId}`)
         .then(res=>{
-            const Wards=res.data.data;
+            const Wards=res.results
             let wards=[];
             for(let el in Wards){
                 wards.push({
-                    name:Wards[el].name,
-                    id:Wards[el].id
+                    name:Wards[el].ward_name,
+                    id:Wards[el].ward_id
                 })    
             }
             setWards(wards)
