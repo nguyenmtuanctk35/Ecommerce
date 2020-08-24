@@ -10,8 +10,7 @@ import './Footer.css'
 
 const Footer=props=>{
     const handleClick=()=>{
-      window.scrollTo(0,0)
-    }
+      window.scrollTo({ top: 0, behavior: 'smooth' });    }
     return(
         <footer className=" bg-light ftco-section ftco-footer" style={{marginTop: '1rem'}}>
         <div className="container" style={{paddingTop:'2rem'}}>
