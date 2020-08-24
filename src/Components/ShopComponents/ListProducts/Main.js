@@ -71,9 +71,9 @@ const ListProducts =props=> {
     }
   
    const loadPosts =async () => {
-    let url='https://personalecommerce.herokuapp.com/products/productsShop?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
+    let url='https://personalecommerce.herokuapp.com'+'/products/productsShop?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
     if(typeClothes!==''){
-      let url='https://personalecommerce.herokuapp.com/products/productsShop/'+urlPara+'/'+'?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
+      let url='https://personalecommerce.herokuapp.com'+'/products/productsShop/'+urlPara+'/'+'?price='+priceRange.min+ '%2C'+priceRange.max+'&rating='+rating+'&page='+page
         }
      
     
